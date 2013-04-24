@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	  android:background="@drawable/fondo" >
+
+<ScrollView 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  
+    android:gravity="center" >
+    
+  	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_gravity="center"
+    	android:gravity="center">
+
+		  		<LinearLayout
+		  		    android:layout_width="wrap_content"
+		  		    android:layout_height="wrap_content"
+		  		    android:background="@drawable/search_bg_shadowww"
+		  		    android:gravity="center"
+		  		    android:minHeight="300dp"
+		  		    android:orientation="vertical"
+		  		    android:padding="40dip" >
+		
+		          <!--  Email Label -->
+		         	<TextView
+		        		android:id="@+id/title"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_centerHorizontal="true"
+				        android:layout_gravity="center"
+				        android:text="Ordenes de compra"
+		        		android:textColor="#2f5284"
+				        android:textSize="30dip"
+				        android:textStyle="bold"
+		        		android:typeface="sans" />
+		         
+		          	<TextView
+		        		android:id="@+id/fecha"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_below="@+id/title"
+				        android:layout_gravity="center"
+				        android:layout_centerHorizontal="true"
+		        		android:layout_marginTop="5dp"
+		        		android:gravity="left"
+		        		android:text="@string/compra"
+		        		android:textColor="#005496"
+		        		android:textSize="20dip" />
+		          
+		            <TextView
+				        android:id="@+id/title"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_centerHorizontal="true"
+		        		android:layout_gravity="left"
+		        		android:layout_marginTop="5dp"
+		        		android:text="Requisitos:"
+		        		android:textColor="#2f5284"
+		        		android:textSize="30dip"
+		        		android:textStyle="bold"
+		        		android:typeface="sans" />
+			            
+		            <TextView
+		       			android:id="@+id/fecha"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_below="@+id/title"
+		        		android:layout_gravity="center"
+		        		android:layout_centerHorizontal="true"
+		        		android:layout_marginTop="5dp"
+		        		android:gravity="left"
+		        		android:text="@string/requisitos"
+		        		android:textColor="#005496"
+		        		android:textSize="20dip" />
+			            
+		            <TextView
+		        		android:id="@+id/title"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_centerHorizontal="true"
+				        android:layout_gravity="left"
+		        		android:layout_marginTop="5dp"
+		        		android:text="los beneficios que tienen los empleados PNC:"
+		        		android:textColor="#2f5284"
+		        		android:textSize="30dip"
+		        		android:textStyle="bold"
+		        		android:typeface="sans" />
+				            
+		            <TextView
+		        		android:id="@+id/fecha"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_below="@+id/title"
+		        		android:layout_gravity="center"
+		        		android:layout_centerHorizontal="true"
+		        		android:layout_marginTop="5dp"
+		        		android:gravity="left"
+		        		android:text="@string/beneficios1"
+		        		android:textColor="#005496"
+		        		android:textSize="20dip" />
+				</LinearLayout>
+				<LinearLayout         
+          			android:orientation="vertical"
+          			android:layout_width="wrap_content"
+          			android:layout_height="wrap_content"
+           			android:minHeight="300dp"
+           			android:gravity="center"
+          			android:padding="40dip"
+          			android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+	         	<TextView
+        			android:id="@+id/title"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="Como tramitar un crédito"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+          
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/tramitar"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>
+
+
+		
+  			<LinearLayout         
+          		android:orientation="vertical"
+          		android:layout_width="wrap_content"
+          		android:layout_height="wrap_content"
+           		android:minHeight="300dp"
+           		android:gravity="center"
+          		android:padding="40dip"
+          		android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+         		<TextView
+        			android:id="@+id/title"
+			        android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="Pagos de servicios"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+         
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/pago"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>
+		
+   		<LinearLayout         
+          	android:orientation="vertical"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+           	android:minHeight="300dp"
+           	android:gravity="center"
+          	android:padding="40dip"
+          	android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+	         	<TextView
+        			android:id="@+id/title"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="¿Quienes pueden afiliarse a ACACYC PNC de R.L.?"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+         
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/afiliarse"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>    
+		<LinearLayout         
+          	android:orientation="vertical"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+           	android:minHeight="300dp"
+           	android:gravity="center"
+          	android:padding="40dip"
+          	android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+	         	<TextView
+        			android:id="@+id/title"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="¿Como Asociarse?"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+         
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/asociarse"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>
+		<LinearLayout         
+          	android:orientation="vertical"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+           	android:minHeight="300dp"
+           	android:gravity="center"
+          	android:padding="40dip"
+          	android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+	         	<TextView
+        			android:id="@+id/title"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="Beneficios de los ahorros, tasas de interés y premios por afiliaciones"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+         
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/beneficios"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>
+		<LinearLayout         
+          	android:orientation="vertical"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+           	android:minHeight="300dp"
+           	android:gravity="center"
+          	android:padding="40dip"
+          	android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+	         	<TextView
+        			android:id="@+id/title"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="Ayuda por fallecimiento de $150.00"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+         
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/fallecimiento"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>
+		<LinearLayout         
+          	android:orientation="vertical"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+           	android:minHeight="300dp"
+           	android:gravity="center"
+          	android:padding="40dip"
+          	android:background="@drawable/search_bg_shadowww">
+          <!--  Email Label -->
+	         	<TextView
+        			android:id="@+id/title"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_gravity="center"
+        			android:text="Fondo de Ayuda por defunción"
+        			android:textColor="#2f5284"
+        			android:textSize="30dip"
+        			android:textStyle="bold"
+        			android:typeface="sans" />
+         
+          		<TextView
+        			android:id="@+id/fecha"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_below="@+id/title"
+        			android:layout_gravity="center"
+        			android:layout_centerHorizontal="true"
+        			android:layout_marginTop="5dp"
+        			android:gravity="left"
+        			android:text="@string/ayuda"
+        			android:textColor="#005496"
+        			android:textSize="20dip" />
+		</LinearLayout>
+    </LinearLayout>  
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

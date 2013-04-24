@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:tileMode="repeat"
+       android:background="#cecdcd">
+       
+   <!--   <TextView android:layout_width="fill_parent" android:id="@+id/textFacebook"
+    	        android:gravity="center_horizontal" android:layout_height="wrap_content"
+                android:text="@string/welcome" android:layout_alignParentTop="true" />
+        
+        <Button android:text="@string/enter" android:id="@+id/buttonLogin"
+                android:layout_below="@+id/textFacebook"
+                android:layout_centerHorizontal="true" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="30dip"
+                android:background="@drawable/btn_blue"
+                android:textColor="#fff"></Button>
+        
+        <ProgressBar android:id="@+id/progressLogin"
+                android:layout_centerInParent="true" android:layout_width="wrap_content"
+                android:visibility="gone" android:layout_height="wrap_content"></ProgressBar>-->
+
+        <ProgressBar
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:layout_centerInParent="true"
+       android:id="@+id/progressBar1"/>      
+        
+   <WebView
+       android:id="@+id/WebView"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_weight="1"
+       >
+   </WebView>
+        
+</RelativeLayout>

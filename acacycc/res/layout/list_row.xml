@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:background="@drawable/list_selector"
+    android:minHeight="200dp"
+    android:minWidth="200dp"
+    android:orientation="vertical"
+    android:padding="25dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+
+    <!-- Title Of Song -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Credito Hipotecario"
+        android:textColor="#2f5284"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Aprobado 26 febrero, 2013"
+        android:textColor="#005496"
+        android:textSize="20dip" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fecha"
+        android:layout_below="@+id/fecha"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/title"
+        android:gravity="center"
+        android:text="saldo: "
+        android:textColor="#005496"
+        android:textSize="20dip" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="$4,000"
+            android:textColor="#2f5284"
+            android:textSize="30dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

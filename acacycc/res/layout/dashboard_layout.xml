@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:padding="100dp"
+	android:background="@drawable/fondo"
+>
+    	<!-- Include Action Bar 
+    	<include layout="@layout/actionbar_layout"/>
+    	<TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Saul Ernesto Martinez Garcia"
+        android:textColor="#005496"
+        android:textSize="25dip" />-->
+    	<!--  Include Fragmented dashboard 
+		<include layout="@layout/fragment_layout1"/>	-->	
+		
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center"
+		    android:layout_margin="60dp">
+
+		 <Button
+        	android:id="@+id/btn_friends"
+        	style="@style/DashboardButton"
+        	android:drawableTop="@drawable/btn_credito"
+        	android:text="Calcula tu Credito"
+        	android:textColor="#4d88b3"
+        	android:layout_margin="60dp"
+		 	/>
+    
+		<!--  Messages Button -->
+   		 <Button
+        	android:id="@+id/btn_messages"
+        	style="@style/DashboardButton"
+        	android:drawableTop="@drawable/btn_conocenos"
+        	android:text="Conócenos"
+        	android:textColor="#4d88b3"
+        	android:layout_margin="60dp"
+ 			/>
+	
+    
+
+   		 <!--  Events Button -->
+   		 <Button
+        	android:id="@+id/btn_events"
+       	 	style="@style/DashboardButton"
+        	android:drawableTop="@drawable/btn_informacion"
+        	android:text="Información"
+        	android:textColor="#4d88b3"
+        	android:layout_margin="60dp"
+			/>
+	</LinearLayout>
+		
+		<!--  Include Footer 
+		 <Button android:id="@+id/btnsalir"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Salir"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_blue"/>-->
+		<!--<include layout="@layout/footer_layout"/>-->
+    	    
+</LinearLayout>

@@ -1,0 +1,43 @@
+<com.example.acacyc.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+
+	<!--  News Feed Button 
+    <Button
+        android:id="@+id/btn_news_feed"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_saldo"
+        android:text="Consulta tu Saldo"
+        android:textColor="#4d88b3"
+ />-->
+	<!--  Friends Button -->
+    <Button
+        android:id="@+id/btn_friends"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_credito"
+        android:text="Solicita tu Credito"
+        android:textColor="#4d88b3"
+ />
+    
+	<!--  Messages Button -->
+    <Button
+        android:id="@+id/btn_messages"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_conocenos"
+        android:text="Conócenos"
+        android:textColor="#4d88b3"
+ />
+	
+    
+
+    <!--  Events Button -->
+    <Button
+        android:id="@+id/btn_events"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_informacion"
+        android:text="Información"
+        android:textColor="#4d88b3"
+/>
+</com.example.acacyc.DashboardLayout>

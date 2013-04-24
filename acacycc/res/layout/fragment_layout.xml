@@ -1,0 +1,55 @@
+<com.example.acacyc.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+
+	<!--  News Feed Button 
+    <Button
+        android:id="@+id/btn_hipo"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_hi"
+        android:text="Credito Hipotecario"
+ />-->
+	<!--  Friends Button -->
+    <Button
+        android:id="@+id/btn_pers"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_credito"
+        android:text="Credito Personal"
+        android:textColor="#4d88b3"
+ />
+    
+	<!--  Messages Button -->
+    <Button
+        android:id="@+id/btn_gere"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_ge"
+        android:text="Credito Gerencial"
+        android:textColor="#4d88b3"
+ />
+	
+    
+
+    <!--  Events Button -->
+    <Button
+        android:id="@+id/btn_decre"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_de"
+        android:text="Credito Decreciente"
+        android:textColor="#4d88b3"
+/>
+     <Button
+        android:id="@+id/btn_emer"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_em"
+        android:text="Credito de Emergencia"
+        android:textColor="#4d88b3"
+/>
+    <!--    <Button
+        android:id="@+id/btn_bille"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_bi"
+        android:text="Billetin"
+/>-->
+</com.example.acacyc.DashboardLayout>

@@ -1,0 +1,63 @@
+<com.example.acacyc.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+    <Button
+        android:id="@+id/btn1"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_credito"
+        android:text="Solicita tu Credito"
+        android:textColor="#4d88b3"
+ />
+    <Button
+        android:id="@+id/btn2"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_conocenos"
+        android:text="Conócenos"
+        android:textColor="#4d88b3"
+ />
+    <Button
+        android:id="@+id/btn3"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_informacion"
+        android:text="Información"
+        android:textColor="#4d88b3"
+/>
+     <Button
+        android:id="@+id/btn4"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_credito"
+        android:text="Solicita tu Credito"
+        android:textColor="#4d88b3"
+ />
+
+    <Button
+        android:id="@+id/btn5"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_conocenos"
+        android:text="Conócenos"
+        android:textColor="#4d88b3"
+ />
+    <Button
+        android:id="@+id/btn6"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_informacion"
+        android:text="Información"
+        android:textColor="#4d88b3"
+/>
+    <Button
+        android:id="@+id/btn7"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_conocenos"
+        android:text="Conócenos"
+        android:textColor="#4d88b3"
+ />
+    <Button
+        android:id="@+id/btn8"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_informacion"
+        android:text="Información"
+        android:textColor="#4d88b3"
+/>
+</com.example.acacyc.DashboardLayout>
