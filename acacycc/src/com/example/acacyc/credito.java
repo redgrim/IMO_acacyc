@@ -22,6 +22,7 @@ public class credito extends SherlockActivity{
 		Button btn_gere = (Button) findViewById(R.id.btn_gere);	        	   
 		Button btn_decr = (Button) findViewById(R.id.btn_decre);
 		Button btn_emer	= (Button) findViewById(R.id.btn_emer);		
+		Button atras	= (Button) findViewById(R.id.atras);	
 		//Button btn_bill	= (Button) findViewById(R.id.btn_bille);
 		
 		/*btn_hipo.setOnClickListener(new View.OnClickListener() {	
@@ -76,6 +77,15 @@ public class credito extends SherlockActivity{
 				i.putExtra("tipo", "em");
 				startActivity(i);
 		
+			}
+		});
+		atras.setOnClickListener(new View.OnClickListener() {	
+			@Override
+			public void onClick(View view) {
+				// Launching News Feed Screen
+				Intent i = new Intent(getApplicationContext(), MainActivity.class);				
+				startActivity(i);
+				finish();
 			}
 		});
 		/*btn_bill.setOnClickListener(new View.OnClickListener() {	

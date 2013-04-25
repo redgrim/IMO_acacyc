@@ -52,7 +52,7 @@ public class Tipo extends SherlockActivity{
 		credito.setText(flag);
 		
 		monto = (EditText) findViewById(R.id.monto);		
-           
+		Button atras	= (Button) findViewById(R.id.atras1);	
 		aplicar = (Button)findViewById(R.id.btnaplicar);
 		aplicar.setOnClickListener(new View.OnClickListener() {	
 			@Override
@@ -333,7 +333,15 @@ public class Tipo extends SherlockActivity{
 				alertDialog.show();		*/
 			}
 		});
-		
+		atras.setOnClickListener(new View.OnClickListener() {	
+			@Override
+			public void onClick(View view) {
+				// Launching News Feed Screen
+				Intent i = new Intent(getApplicationContext(), credito.class);				
+				startActivity(i);
+				finish();
+			}
+		});
 	}
 	public double personal(double mont2 , int plazo){
 		double mon = mont2;
