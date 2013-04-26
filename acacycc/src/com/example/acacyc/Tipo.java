@@ -89,10 +89,7 @@ public class Tipo extends SherlockActivity{
 					 double c = a+b;
 					
 					 DecimalFormat df = new DecimalFormat("#.##");
-					Toast.makeText(Tipo.this, "CUOTA = $"+ df.format(a) , 10000).show();
-					Toast.makeText(Tipo.this, "SEG DEUDA = $"+ df.format(b) , 10000).show();
-					Toast.makeText(Tipo.this, "CUOTA TOTAL = $"+ df.format(c) , 10000).show();
-					
+	
 					AlertDialog.Builder builder;
 					final AlertDialog alertDialog;
 					LayoutInflater inflater = (LayoutInflater) Tipo.this.getSystemService(Tipo.this.LAYOUT_INFLATER_SERVICE);
@@ -147,9 +144,6 @@ public class Tipo extends SherlockActivity{
 						 double c = a+b;
 						
 						 DecimalFormat df = new DecimalFormat("#.##");
-						Toast.makeText(Tipo.this, "CUOTA = $"+ df.format(a) , 10000).show();
-						Toast.makeText(Tipo.this, "SEG DEUDA = $"+ df.format(b) , 10000).show();
-						Toast.makeText(Tipo.this, "CUOTA TOTAL = $"+ df.format(c) , 10000).show();
 						
 						AlertDialog.Builder builder;
 						final AlertDialog alertDialog;
@@ -204,9 +198,6 @@ public class Tipo extends SherlockActivity{
 						 double c = a+b;
 						
 						 DecimalFormat df = new DecimalFormat("#.##");
-						Toast.makeText(Tipo.this, "CUOTA = $"+ df.format(a) , 10000).show();
-						Toast.makeText(Tipo.this, "SEG DEUDA = $"+ df.format(b) , 10000).show();
-						Toast.makeText(Tipo.this, "CUOTA TOTAL = $"+ df.format(c) , 10000).show();
 						
 						AlertDialog.Builder builder;
 						final AlertDialog alertDialog;
@@ -261,8 +252,6 @@ public class Tipo extends SherlockActivity{
 						 double c = a+b;
 						
 						 DecimalFormat df = new DecimalFormat("#.##");
-						Toast.makeText(Tipo.this, "CUOTA = $"+ df.format(a) , 10000).show();
-						
 						
 						AlertDialog.Builder builder;
 						final AlertDialog alertDialog;
@@ -282,15 +271,15 @@ public class Tipo extends SherlockActivity{
 						final TextView tx1 = (TextView) layout.findViewById(R.id.pl);
 						final TextView tx2 = (TextView) layout.findViewById(R.id.in);
 						final TextView tx3 = (TextView) layout.findViewById(R.id.cu);
-						//final TextView tx4 = (TextView) layout.findViewById(R.id.seg);
-					//	final TextView tx5 = (TextView) layout.findViewById(R.id.cuto);
+						final TextView tx4 = (TextView) layout.findViewById(R.id.seg);
+						final TextView tx5 = (TextView) layout.findViewById(R.id.cuto);
 						title.setText("Linea de "+flag);
 			            tx.setText("" + mont);
 			            tx1.setText(""+plazo);
 			            tx2.setText(""+interes);
 			            tx3.setText(df.format(a));
-			           // tx4.setText(df.format(b));
-			           // tx5.setText(df.format(c));
+			            tx4.setText("-");
+			            tx5.setText(df.format(a));
 						Button aceptarBtn = (Button) layout.findViewById(R.id.btnaceptar);
 						aceptarBtn.setOnClickListener(new OnClickListener(){
 							@Override	
