@@ -4,7 +4,9 @@ import java.text.DecimalFormat;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,15 +21,17 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
 
+
 public class Tipo extends SherlockActivity{
 
 	String flag,tipo;
 	TextView credito;
-	Button aplicar;
+	Button aplicar, _b0,_b1,_b2,_b3,_b4,_b5,_b6,_b7,_b8,_b9;
 	EditText monto;
 	RadioGroup rg1;
 	RadioButton rb1,rb2,rb3,rb4,rb5,rb6;
 	double mont = 0;
+	private boolean _nuevoValor = true;
 	int plazo;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,21 +44,53 @@ public class Tipo extends SherlockActivity{
 		tipo = (String) extra.get("tipo");
 		setTitle(flag);
 		
-		
-		rb1 = (RadioButton) findViewById(R.id.rb12);
+		_b0 = (Button)findViewById(R.id.button0);
+        _b1 = (Button)findViewById(R.id.button1);
+        _b2 = (Button)findViewById(R.id.button2);
+        _b3 = (Button)findViewById(R.id.button3);
+        _b4 = (Button)findViewById(R.id.button4);
+        _b5 = (Button)findViewById(R.id.button5);
+        _b6 = (Button)findViewById(R.id.button6);
+        _b7 = (Button)findViewById(R.id.button7);
+        _b8 = (Button)findViewById(R.id.button8);
+        _b9 = (Button)findViewById(R.id.button9);
+		/*rb1 = (RadioButton) findViewById(R.id.rb12);
 		rb2 = (RadioButton) findViewById(R.id.rb24);
 		rb3 = (RadioButton) findViewById(R.id.rb36);
 		rb4 = (RadioButton) findViewById(R.id.rb48);
 		rb5 = (RadioButton) findViewById(R.id.rb60);
 		rb6 = (RadioButton) findViewById(R.id.rb72);
-		rg1 = (RadioGroup) findViewById(R.id.radiogroup);
+		rg1 = (RadioGroup) findViewById(R.id.radiogroup);*/
 		credito = (TextView)findViewById(R.id.credito);		
 		credito.setText(flag);
 		
 		monto = (EditText) findViewById(R.id.monto);		
-		Button atras	= (Button) findViewById(R.id.atras1);	
-		aplicar = (Button)findViewById(R.id.btnaplicar);
-		aplicar.setOnClickListener(new View.OnClickListener() {	
+		
+		monto.setText("0");
+		
+		View.OnClickListener lsBoton = new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				monto.setTextColor(Color.BLACK);
+				cambiaValor();
+				monto.setText(monto.getText()+((Button)arg0).getText().toString());
+			}
+		};
+		_b1.setOnClickListener(lsBoton);        
+		_b2.setOnClickListener(lsBoton);
+		_b3.setOnClickListener(lsBoton);
+		_b4.setOnClickListener(lsBoton);
+		_b5.setOnClickListener(lsBoton);
+		_b6.setOnClickListener(lsBoton);        
+		_b7.setOnClickListener(lsBoton);
+		_b8.setOnClickListener(lsBoton);
+		_b9.setOnClickListener(lsBoton);
+		_b0.setOnClickListener(lsBoton);
+		
+	/*	Button atras	= (Button) findViewById(R.id.atras1);	
+		aplicar = (Button)findViewById(R.id.btnaplicar);*/
+		/*aplicar.setOnClickListener(new View.OnClickListener() {	
 			@Override
 			public void onClick(View view) {
 				// Launching News Feed Screen
@@ -297,7 +333,7 @@ public class Tipo extends SherlockActivity{
 						}else if (mont == 0.0 || mont <500){
 							Toast.makeText(Tipo.this, "INGRESE UN MONTO MAYOR DE $1000" , 10000).show();
 						}
-				}
+				}*/
 				
 				
 				
@@ -320,9 +356,9 @@ public class Tipo extends SherlockActivity{
 				});
 				//Mostramos el alertdialog	
 				alertDialog.show();		*/
-			}
-		});
-		atras.setOnClickListener(new View.OnClickListener() {	
+			//}
+	//	});
+		/*atras.setOnClickListener(new View.OnClickListener() {	
 			@Override
 			public void onClick(View view) {
 				// Launching News Feed Screen
@@ -330,17 +366,16 @@ public class Tipo extends SherlockActivity{
 				startActivity(i);
 				finish();
 			}
-		});
+		});*/
 	}
-	public double personal(double mont2 , int plazo){
-		double mon = mont2;
-		int pla = plazo;
-		double interes = 0.139;
-		double resultado;
-	resultado = (mon/((1-(1+Math.pow((interes/12), pla)))/(interes/12)))+1.14;
-	
-	return resultado;
-	}
+	private void cambiaValor()
+    {
+    	if (_nuevoValor == true)
+    	{
+    		monto.setText("");
+    		_nuevoValor = false;
+    	}
+    }
 	@Override
 	  public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
@@ -354,5 +389,13 @@ public class Tipo extends SherlockActivity{
 	    // more code here for other cases
 	  }
 	    return super.onOptionsItemSelected(item);    
+	}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+	        return true;
+		}
+	    return super.onKeyDown(keyCode, event);
 	}
 }

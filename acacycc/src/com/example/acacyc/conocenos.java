@@ -3,6 +3,7 @@ package com.example.acacyc;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -70,5 +71,15 @@ public class conocenos extends SherlockActivity{
 	    // more code here for other cases
 	  }
 	    return super.onOptionsItemSelected(item);    
+	}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			Intent intent = new Intent(this, MainActivity.class);
+			startActivity(intent);
+	        return true;
+		}
+	    return super.onKeyDown(keyCode, event);
 	}
 }
