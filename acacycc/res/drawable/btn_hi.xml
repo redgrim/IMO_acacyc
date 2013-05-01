@@ -2,7 +2,7 @@
     <item android:drawable="@drawable/hipo"
         android:state_focused="true"
         android:state_pressed="true" />
-    <item   android:drawable="@drawable/hipo1"
+    <item   android:drawable="@drawable/hipo13"
         android:state_focused="false"
         android:state_pressed="true" />
     <item android:drawable="@drawable/hipo" android:state_focused="true" />

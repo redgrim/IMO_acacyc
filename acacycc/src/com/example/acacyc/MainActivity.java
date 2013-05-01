@@ -22,6 +22,7 @@ public class MainActivity extends SherlockActivity {
 		Button btn_credito 		= (Button) findViewById(R.id.btn_friends);	        
 		Button btn_conocenos 	= (Button) findViewById(R.id.btn_messages);	        	   
 		Button btn_informacion 	= (Button) findViewById(R.id.btn_events);
+		Button btn_res 	= (Button) findViewById(R.id.btn_events1);
 		//Button salir 	= (Button) findViewById(R.id.btnsalir);
 	
 		/*btn_saldo.setOnClickListener(new View.OnClickListener() {	
@@ -59,6 +60,16 @@ public class MainActivity extends SherlockActivity {
 				// Launching News Feed Screen
 			//	Intent i = new Intent(getApplicationContext(), Mapa2.class);
 				Intent i = new Intent(getApplicationContext(), informacion.class);
+
+				startActivity(i);
+			}
+		});
+		btn_res.setOnClickListener(new View.OnClickListener() {	
+			@Override
+			public void onClick(View view) {
+				// Launching News Feed Screen
+			//	Intent i = new Intent(getApplicationContext(), Mapa2.class);
+				Intent i = new Intent(getApplicationContext(), res.class);
 
 				startActivity(i);
 			}

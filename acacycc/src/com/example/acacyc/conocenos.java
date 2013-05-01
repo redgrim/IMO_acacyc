@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ProgressBar;
 
 import com.actionbarsherlock.app.SherlockActivity;
@@ -31,7 +32,17 @@ public class conocenos extends SherlockActivity{
 	     web.getSettings().setJavaScriptEnabled(true);
 	     web.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 	     web.loadUrl("http://www.acacycpnc.com.sv/");
-		
+	     Button atras	= (Button) findViewById(R.id.atras1);	
+	     
+	     atras.setOnClickListener(new View.OnClickListener() {	
+				@Override
+				public void onClick(View view) {
+					// Launching News Feed Screen
+					Intent i = new Intent(getApplicationContext(), MainActivity.class);				
+					startActivity(i);
+					finish();
+				}
+			});
 	}
 	public class myWebClient extends WebViewClient
 	{

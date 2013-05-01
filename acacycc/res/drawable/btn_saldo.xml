@@ -1,12 +1,12 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/saldo"
+    <item android:drawable="@drawable/saldo3"
         android:state_focused="true"
         android:state_pressed="true" />
-    <item   android:drawable="@drawable/saldo1"
+    <item   android:drawable="@drawable/saldo13"
         android:state_focused="false"
         android:state_pressed="true" />
-    <item android:drawable="@drawable/saldo" android:state_focused="true" />
-    <item android:drawable="@drawable/saldo"
+    <item android:drawable="@drawable/saldo3" android:state_focused="true" />
+    <item android:drawable="@drawable/saldo3"
         android:state_focused="false"
         android:state_pressed="false" />
 </selector>

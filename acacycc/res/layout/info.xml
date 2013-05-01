@@ -16,7 +16,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:background="@drawable/btn_blue"
-        android:text="Atras"
+        android:text="Regresar"
         android:textColor="#fff" />
     
     <LinearLayout
@@ -27,9 +27,21 @@
         android:gravity="center"
         android:minHeight="300dp"
         android:orientation="vertical"
-        android:padding="40dip" >
+        android:padding="20dip" >
 
-        <!-- Email Label -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+             <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+    
+        
+        
+        android:orientation="vertical"
+         >
 
         <TextView
             android:id="@+id/title"
@@ -39,7 +51,7 @@
             android:layout_gravity="center"
             android:text="Ordenes de compra"
             android:textColor="#fff"
-            android:textSize="20dip"
+            android:textSize="25dip"
             android:textStyle="bold"
             android:typeface="sans" />
 
@@ -54,7 +66,7 @@
             android:gravity="left"
             android:text="@string/compra"
             android:textColor="#fff"
-            android:textSize="15dip"  />
+            android:textSize="20dip"  />
 
         <TextView
             android:id="@+id/title"
@@ -65,7 +77,7 @@
             android:layout_marginTop="5dp"
             android:text="Requisitos:"
             android:textColor="#fff"
-            android:textSize="20dip"
+            android:textSize="25dip"
             android:textStyle="bold"
             android:typeface="sans" />
 
@@ -80,7 +92,7 @@
             android:gravity="left"
             android:text="@string/requisitos"
             android:textColor="#fff"
-           android:textSize="15dip"  />
+           android:textSize="20dip"  />
 
         <TextView
             android:id="@+id/title"
@@ -91,7 +103,7 @@
             android:layout_marginTop="5dp"
             android:text="los beneficios que tienen los empleados PNC:"
             android:textColor="#fff"
-            android:textSize="20dip"
+            android:textSize="25dip"
             android:textStyle="bold"
             android:typeface="sans" />
 
@@ -106,7 +118,11 @@
             android:gravity="left"
             android:text="@string/beneficios1"
             android:textColor="#fff"
-            android:textSize="15dip"  />
+            android:textSize="20dip"  />
+        </LinearLayout>
+        </ScrollView>
+        
+     
     </LinearLayout>
 
    

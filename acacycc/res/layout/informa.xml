@@ -24,6 +24,7 @@
 	        android:text="Ordenes de Compra"
 	        android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 	 		/>
 	    
 	      <Button
@@ -33,6 +34,7 @@
 	        android:text="Como tramitar un crédito"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 			 />
 	     <Button
 	        android:id="@+id/btn3"
@@ -41,6 +43,7 @@
 	        android:text="Pagos de servicios"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 			/>
 	     <Button
 	        android:id="@+id/btn4"
@@ -49,6 +52,7 @@
 	        android:text="¿Quienes pueden afiliarse?"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 	 		/>
 	 </LinearLayout>
 
@@ -67,6 +71,7 @@
 	        android:text="¿Como Asociarse?"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 	 		/>
 	    <Button
 	        android:id="@+id/btn6"
@@ -75,6 +80,7 @@
 	        android:text="Beneficios de los ahorros"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 			/>
 	    <Button
 	        android:id="@+id/btn7"
@@ -83,6 +89,7 @@
 	        android:text="Ayuda por fallecimiento"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 	 		/>
 	    <Button
 	        android:id="@+id/btn8"
@@ -91,6 +98,7 @@
 	        android:text="Fondo de Ayuda por defunción"
 	         android:padding="20dp"
 	        android:textColor="#4d88b3"
+	        android:textSize="20dp"
 			/>	
     </LinearLayout>
     
@@ -101,7 +109,7 @@
         android:layout_margin="20dip"
         android:background="@drawable/btn_blue"
         android:layout_gravity="center_horizontal"
-        android:text="Atras"
+        android:text="Regresar al menu"
       
         android:textColor="#fff" />
 </LinearLayout>

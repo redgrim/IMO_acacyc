@@ -28,7 +28,7 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content" 
 		    android:layout_gravity="center"
-		    android:layout_margin="60dp">
+		    >
 
 		 <Button
         	android:id="@+id/btn_friends"
@@ -36,7 +36,8 @@
         	android:drawableTop="@drawable/btn_credito"
         	android:text="Calcula tu Credito"
         	android:textColor="#4d88b3"
-        	android:layout_margin="60dp"
+        	android:layout_margin="40dp"
+        	android:textSize="20dp"
 		 	/>
     
 		<!--  Messages Button -->
@@ -46,11 +47,16 @@
         	android:drawableTop="@drawable/btn_conocenos"
         	android:text="Conócenos"
         	android:textColor="#4d88b3"
-        	android:layout_margin="60dp"
+        	android:layout_margin="40dp"
+        	android:textSize="20dp"
  			/>
 	
-    
-
+    </LinearLayout>
+	<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center"
+		    >
    		 <!--  Events Button -->
    		 <Button
         	android:id="@+id/btn_events"
@@ -58,7 +64,18 @@
         	android:drawableTop="@drawable/btn_informacion"
         	android:text="Información"
         	android:textColor="#4d88b3"
-        	android:layout_margin="60dp"
+        	android:layout_margin="40dp"
+        	android:textSize="20dp"
+			/>
+   		 
+   		 <Button
+        	android:id="@+id/btn_events1"
+       	 	style="@style/DashboardButton"
+        	android:drawableTop="@drawable/btn_informacion"
+        	android:text="Información"
+        	android:textColor="#4d88b3"
+        	android:layout_margin="40dp"
+        	android:textSize="20dp"
 			/>
 	</LinearLayout>
 		

@@ -18,6 +18,7 @@
         android:drawableTop="@drawable/btn_credito"
         android:text="Credito Personal"
         android:textColor="#4d88b3"
+        android:textSize="20dp"
  />
     
 	<!--  Messages Button -->
@@ -27,6 +28,7 @@
         android:drawableTop="@drawable/btn_ge"
         android:text="Credito Gerencial"
         android:textColor="#4d88b3"
+        android:textSize="20dp"
  />
 	
     
@@ -38,6 +40,7 @@
         android:drawableTop="@drawable/btn_de"
         android:text="Credito Decreciente"
         android:textColor="#4d88b3"
+        android:textSize="20dp"
 />
      <Button
         android:id="@+id/btn_emer"
@@ -45,6 +48,7 @@
         android:drawableTop="@drawable/btn_em"
         android:text="Credito de Emergencia"
         android:textColor="#4d88b3"
+        android:textSize="20dp"
 />
     <!--    <Button
         android:id="@+id/btn_bille"
